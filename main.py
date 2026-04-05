@@ -4,6 +4,7 @@ import json
 from aiohttp import web
 import os
 import random
+from pathlib import Path
 
 MUSIC_DIR = "/home/samisthefbi/Music"
 
@@ -39,9 +40,9 @@ class RadioStation:
 
     def _get_files(self):
         files = [
-            os.path.join(self.music_dir, f)
-            for f in os.listdir(self.music_dir)
-            if f.lower().endswith(MUSIC_EXTENSIONS)
+            str(f)
+            for f in Path(self.music_dir).rglob("*")
+            if f.suffix.lower() in MUSIC_EXTENSIONS
         ]
         random.shuffle(files)
         return files
