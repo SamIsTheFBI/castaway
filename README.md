@@ -25,6 +25,11 @@
   ```sh
   python main.py
   ```
+
+  Now you can go use any media player like VLC or mpv to listen to the stream:
+  ```sh
+  mpv http://your-ip-here:6769/stream
+  ```
 ## why
 
 i have been slowly converting my arch linux setup to something of a home server & thought it'd be cool to have a music service running on it. wait, i already use mpd+ncmpcpp lets use it as a cool 24/7 radio! little did i know even though you can expose it to lan but audio output can be very different for different devices (my work macbook doesn't use pipewire ofc) and i couldn't find any answers that worked for me. 
