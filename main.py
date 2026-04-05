@@ -7,7 +7,7 @@ import random
 
 MUSIC_DIR = "/home/samisthefbi/Music"
 
-MUSIC_EXTENSIONS = ('.flac', '.ogg', '.wav', '.aac', '.m4a', '.opus')
+MUSIC_EXTENSIONS = ('.mp3', '.flac', '.ogg', '.wav', '.aac', '.m4a', '.opus')
 ICY_METAINT = 8192
 
 
